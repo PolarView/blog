@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  height: 700px;
+  position: relative;
+
+  @media (max-width: 900px) {
+    height: 400px;
+  }
+
+  .description {
+    position: relative;
+  }
+
+  .sliderArrowsContainer {
+    position: relative;
+  }
+
+  .pagination {
+    position: relative;
+  }
+  .sliderImage {
+  }
+}

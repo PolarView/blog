@@ -1,0 +1,66 @@
+.container {
+  width: 100vw;
+  height: 5%;
+  background-color: rgb(33, 33, 33);
+  padding: 10px 7px 10px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sectionsWrapper {
+    font-family: "Nunito-Regular";
+    font-size: 30px;
+    color: rgb(166, 166, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .mainSection {
+      font-size: 30px;
+      color: rgb(166, 166, 67);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      width: 90%;
+
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      .section:hover:not(:last-child) {
+        border-right: 1px solid gray;
+      }
+    }
+
+    .addSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .searchIconContainer {
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 50px;
+
+        &:not(:last-child):hover {
+          border-right: 1px solid gray;
+        }
+      }
+
+      .toggleThemeIconContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Nunito-Regular";
+  src: local("Nunito-Regular"), url(../fonts/Nunito/Nunito-Regular.woff) format("woff");
+}
+
+:root,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
