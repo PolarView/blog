@@ -1,22 +1,121 @@
 .container {
   width: 100%;
-  height: 700px;
+  height: 800px;
   position: relative;
+
+  .imageOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    background-color: red;
+    z-index: 200;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.9977240896358543) 70%
+    );
+    opacity: 0.3;
+  }
+
+  .sliderImage {
+    width: 1000px;
+  }
 
   @media (max-width: 900px) {
     height: 400px;
   }
 
   .description {
-    position: relative;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 300;
+    height: 100%;
+
+    .postType {
+      color: rgb(255, 1, 1);
+      font-size: 20px;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .postTitle {
+      color: antiquewhite;
+      font-size: 53px;
+      font-weight: 600;
+      width: 820px;
+    }
+
+    .postQuoteContainer {
+      width: 480px;
+      height: 90px;
+      color: aliceblue;
+      position: relative;
+      left: 20%;
+      border-left: 2px solid rgb(133, 16, 16);
+      padding-left: 15px;
+      padding-top: 5px;
+      margin-top: 20px;
+
+      .postQuote {
+      }
+    }
+
+    .postTagsContainer {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 700px;
+      height: 50px;
+      margin-top: 35px;
+
+      .postTag {
+        padding: 12px 20px;
+        background-color: rgba(167, 19, 19, 0.919);
+        color: blanchedalmond;
+        border-radius: 10px;
+        margin-right: 15px;
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .postDate {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    z-index: 400;
+    font-weight: 700;
   }
 
   .sliderArrowsContainer {
-    position: relative;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    z-index: 500;
   }
 
   .pagination {
-    position: relative;
+    position: absolute;
+    z-index: 400;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%;
+
+    .dot {
+    }
   }
   .sliderImage {
   }

@@ -1,0 +1,9 @@
+-runnig news line
+-btc dollar eur value
+-tag search
+-image as bravi news
+-dark mode
+-framer motion
+-quill&firebase or sanity
+-slider
+
